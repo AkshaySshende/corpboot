@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+ <title>Form</title>
+</head>
+<body>
+<div id="form" class="container d-flex" height="100%" width="500px" >
+    <form action="submit.form" id="ContactUs" method="post" >
+        <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputfname">First Name</label>
+              <input type="text" required class="form-control" id="inputfname" placeholder="Enter First Name">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputlname">Last Name</label>
+              <input type="lname"  required class="form-control" id="inputlname" placeholder="Enter last Name">
+            </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email"  required class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" min="8"  max="12" required class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+          <div class="form-group col-md-12">
+            <label for="phone">Mobile Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" class="form-control"  placeholder="Enter Mobile Number">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address 1</label>
+          <textarea class="form-control" required id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="inputquery">Your Query</label>
+          <textarea class="form-control" required id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" required class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" required class="form-control">
+              <option selected>Maharashtra</option>
+              <option>Uttar Pradesh</option>
+              <option>Goa</option>
+              <option>Gujrat</option>
+              <option>Delhi</option>
+              <option>Andhra Pradesh</option>
+              <option>Jammu & Kashmir</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" required class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Remember Me
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Contact</button>
+      </form>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
